@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Q4 Drill 2</title>
+    <style>
+        body {
+            background-size: 1500px;
+        }
+    </style>
+</head>
+<body style="background-image: url(https://cdn.pixabay.com/photo/2019/02/24/13/48/sunset-4017599_1280.jpg);">
+    <div class="text-center" style="padding: 50px; color: #001d3d;">
+        <h2>Heat Index Checker</h2>
+    </div>
+    <div class="text-center">
+        <h3 onclick="toggle_instructions()"><b>Check instructions ↓:</b></h3>
+        <div id="toggle"></div><br>
+        <form>
+            <h4>degree in °C</h4>
+            <input type="text" style="text-align: center;" id="temperature" placeholder="Enter degree value">
+            <h4>humidity in %</h4>
+            <input type="text" style="text-align: center;" id="humidity" placeholder="Enter percentage value"><br>
+            <input type="button" class="btn btn-success" onclick="heat_index()" value="Check Heat Index">
+        </form><br>
+    </div>
+    <div id="display1" class="text-center" style="font-size: 30px; color: #001d3d; padding: 5%;"></div>
+    <script src="main.js"></script>
+</body>
+</html>
